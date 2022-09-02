@@ -1,0 +1,165 @@
+:root {
+    --pink: #FFB3B3;
+    --brown: #FFDBA4;
+    --yellow: #FFE9AE;
+    --light-blue: #c1efff;
+    --blue: #3100c7;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #111;
+}
+
+.none {
+    display: none;
+}
+
+.row {
+    height: 100%;
+    display: flex;
+}
+
+.col {
+    height: 100%;
+    flex: 1;
+}
+
+.blockleft {
+    height: 100vh;
+    background-color: #111;
+    /* position: absolute; */
+    /* top: 0; */
+}
+
+.blockright {
+    height: 100vh;
+    background-color: #111;
+}
+
+#img {
+    display: block;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    box-shadow: 5px 5px lightgrey;
+    top: -20%;
+    position: relative;
+    border: 0px solid transparent;
+}
+
+
+/* #myDiv.circle {
+    width: 300px;
+    height: 300px;
+} */
+
+.circle-btn {
+    display: none;
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+    border: 0px solid transparent;
+    border-radius: 50% 20% 50%;
+    width: 150px;
+    height: 150px;
+    background-color: var(--light-blue);
+    box-shadow: 2px 2px var(--blue);
+    animation: wiggle 2s linear infinite;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.text-white {
+    color: aliceblue;
+}
+
+.text-black {
+    color: #111;
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.txt-pacifico {
+    font-family: 'Pacifico', cursive;
+}
+
+.txt-shadow {
+    text-shadow: 2px 2px white;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80%;
+    position: relative;
+}
+
+#card-menu {
+    display: none;
+}
+
+.card {
+    border: 0px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    margin: 50px;
+    padding: 20px;
+    box-shadow: 20px 10px lightgray;
+}
+
+.full-height {
+    height: calc(100vh - 100px);
+}
+
+#congrats {
+    display: none;
+}
+
+img.circle,
+.p-top {
+    margin-top: 50px;
+}
+
+.p-bot {
+    position: relative;
+    top: 20%;
+}
+
+
+/* Animation Here */
+
+@keyframes wiggle {
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
