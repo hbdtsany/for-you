@@ -51,14 +51,14 @@ $(".circle-btn").on("click", function() {
 
 
 function showCongrats() {
-    $('#decoration').css('background-image', 'url("' + '../img/garlands.png' + '")');
+    $('#decoration').css('background-image', 'url("' + './img/garlands.png' + '")');
     $('#decoration').css('height', '150px');
 };
 
 $("#decoration").on('click', function() {
     $("#decorate").fadeIn(2000, function() {
         $("#decoration").remove();
-        $('#cakeish').delay(1000).css('background-image', 'url("' + '../img/cake.png' + '")');
+        $('#cakeish').delay(1000).css('background-image', 'url("' + './img/cake.png' + '")');
         $('#cakeish').delay(1000).css('height', '150px');
         $('#cakeish').delay(1000).css('background-size', 'contain');
     });
@@ -72,7 +72,7 @@ $("#cakeclose").on('click', function() {
     $("#cake").fadeOut(4000);
     $("#cake").delay(5000).remove();
     $("#cakeish").remove();
-    $('#letters').css('background-image', 'url("' + '../img/letters.png' + '")');
+    $('#letters').css('background-image', 'url("' + './img/letters.png' + '")');
     $('#letters').css('height', '150px');
     $('#letters').delay(1000).css('background-size', 'contain');
 })
